@@ -1,0 +1,99 @@
+/*-- Eléments divers --*/
+:root {
+    --primary-bg-color:#f69779;
+    --secondary-bg-color:#EEEEF2;
+    --secondary-color:#79f6f2;
+}
+body{
+    font-size: 16px;
+}
+
+.container{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+
+h2{margin-bottom: 20px;}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+#formations_experience, #works, .footer{
+    color:#FFF;
+    background-color: var(--primary-bg-color);
+}
+
+#infos, #skills, #contact{
+    background-color: var(--secondary-bg-color);
+}
+.btn{
+    border-radius: 0;
+    padding: 10px 50px;
+    background-color: var(--secondary-color);
+    border:none;
+    text-transform: uppercase;
+}
+
+
+/* -- Accueil --*/
+#home{
+    height: 100%;
+    background : url('../static/img/header.jpg') center top fixed;
+    background-size: cover;
+    color: #FFF;
+}
+.header-baseline{
+    margin : 100px auto;
+}
+.header-baseline h1{ margin-bottom: 30px;}
+.header-baseline img{
+    margin: auto;
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+.header-baseline p{ margin-bottom: 30px;}
+
+/* -- Infos -- */
+.citation{
+    border-right: 5px solid var(--primary-bg-color);
+}
+
+/* Skills */
+.progress-bar-success{
+    background-color: var(--secondary-color);
+}
+
+
+/* -- Works --*/
+#works .media{
+    background-color: #FFF;
+    margin-bottom: 60px;
+    color: black;
+}
+
+/* -- Contact --*/
+#contact .input-group{
+    width: 100%;
+    padding: 2% 0;
+}
+#contact .input-group input{
+    border:none;
+    border-radius: 0;
+    font-size: 14px;
+}
+#contact .input-group textarea{
+    height: 170px;
+    border: none;
+    font-size: 14px;
+}
+
+/* -- Footer --*/
+.footer .adresse ul{
+    list-style-type: none;
+    padding:0;
+}
+.social-network i{
+    padding-right: 10px;
+    font-size: 1.7em;
+}
