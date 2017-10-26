@@ -97,3 +97,11 @@ a{
     padding-right: 10px;
     font-size: 1.7em;
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 970px) {
+    .work{
+        padding: 10px;
+    }
+    
+}
