@@ -55,6 +55,10 @@ a{
 .header-baseline p{ margin-bottom: 30px;}
 
 /* -- Infos -- */
+.infos_sup{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .citation{
     border-right: 5px solid var(--primary-bg-color);
 }
