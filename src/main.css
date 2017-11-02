@@ -68,6 +68,10 @@ a{
     background-color: var(--secondary-color);
 }
 
+.skill{
+    margin-bottom: 60px;
+}
+
 
 /* -- Works --*/
 #works .media{
