@@ -135,19 +135,22 @@ Un exemple de transformation de progress bar est visible dans le fichier [main.j
 
 
 
-# build for production and view the bundle analyzer report
+### Aide de Git
+#### Nouveau projet
+- Initialisation de git dans le répertoire actuel : ```git init```
 
+#### Clone d'un projet existant
+- Téléchargment d'un dépôt existant. Exemple avec le dépot du projet : ```git clone https://github.com/heg-web/moncv-CismE97.git```
 
-## Utilisation de Git / GitHub
-git init create a new local git repository
-git add . add all modified and new files to stage
-git commit -m 'msg' commit staged files with msg
-git push send commits to remote server
-git pull download remote commits
-git clone copy a remote repository
-.gitignore ignore files or folders
+#### Commandes indispensables
+- Ajout des fichiers modifiés dans le stage : ```git add . ```
+- Création d'un commit avec un message : ```git commit -m 'msg'```
+- Envoi des derniers commits sur le dépôt distant : ```git push```
+- Téléchargement des derniers commits depuis le dépôt distant : ```git pull```
 
+#### Configurations
+- Spécifier à Git d’utiliser le Line Feed (caractère de contrôle indiquant le passage à la ligne de texte suivante) comme caractère de fin de ligne.
+Ajouter  ```* text eol=lf``` suivante dans le fichier : .gitattributes
 
-* text eol=lf
-
+- Le fichier .gitignore permet d'indiquer à git d'ignorer certains fichiers.
 
