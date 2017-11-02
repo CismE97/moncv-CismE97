@@ -52,7 +52,41 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 4. Installation des dépendances . ``` npm install ```
 4. Cleanup ``` npm uninstall vue --save ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#### Démarrage du serveur de développement
+``` bash
+npm run dev
+```
+#### Déploiement avec GitHub
+1. Prérequis : Créer un compte GitHub et avoir son projet configurer avec git. 
+2. Génération des fichiers minifiés ```npm run build ```
+3. Création de la branche gh-pages  (??)
+La branche master sera déployée sur la branche gh-pages cette page sera hébergée par GitHub.
+[GitHub Pages](https://pages.github.com/)
+
+4. Configuarion du deploiement
+- Installation d'un plugin pour 'commit' et 'push' automatiquement.
+ ```npm install push-dir --save-dev```
+
+Puis on ajoute les lignes ci-dessous dans le fichier package.json
+ ```
+{
+...,
+  "scripts": {
+    ...,
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+...
+}
+ ```
+
+5. On commit tous les derniers changements :
+``` bash 
+git add . --all
+git commit -m
+```
+6. On peut exécuter la commande ```npm run deploy```
+7. Le site est visible à l'adresse http://usernameABC.github.io/repositoryYXZ 
+
 
 ### Installation de  [Bootstrap V3](https://getbootstrap.com/docs/3.3/)
 ```
@@ -99,16 +133,10 @@ Permet la création simple de différentes sortes de graphiques.
 
 Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officiel](http://www.chartjs.org/). 
 
-### Démarrage du serveur de développement
-``` bash
-npm run dev
-```
 
 
 # build for production and view the bundle analyzer report
-``` bash
-npm run build --report
-```
+
 
 ## Utilisation de Git / GitHub
 git init create a new local git repository
