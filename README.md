@@ -1,24 +1,28 @@
 # moncv
 CV / Portfolio réalisé durant le module "PROJET DE TECHNOLOGIES WEB" de 2ème année de Bachelor en Informatique de Gestion à la He-Arc de Neuchâtel.
 Le site que j'ai réalisé est visible [ici](https://heg-web.github.io/moncv-CismE97/).
+
 ## Processus
 Afin de réaliser ce CV, j'ai suivi les étapes suivantes : 
-
-1. Installation des outils nécessaires. 
-2. Développement du HTML
-3. Développement du CSS
-4. Ajout de bootstrap (avec adaptation de l'HTML / CSS)
+1. Installation des outils nécessaires.  (Visual Studio Code, Git)
+2. Installation Node.js 
+3. Développement du HTML
+4. Développement du CSS
+5. Ajout de bootstrap (avec adaptation de l'HTML / CSS)
+6. Ajout de Jquery
+7. Ajout de jquery-smooth-scroll
+8. Ajout de Chart.js
 
 ## Outils / Technologies utilisés
-
-- Node.js
+- [Node.js](#installation-de-nodejs)
 - npm
 - Webpack
 
-- Bootstrap
-- Mardown
+- [Bootstrap]()
+- [jquery-smooth-scroll]()
+- [Chart.js]()
 
-- Visual Studio Code
+- [Visual Studio Code]()
 - Git et GitHub
 
 ## Processus détaillé
