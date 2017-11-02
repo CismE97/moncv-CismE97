@@ -52,21 +52,58 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 4. Installation des dépendances . ``` npm install ```
 4. Cleanup ``` npm uninstall vue --save ```
 
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 ### Installation de  [Bootstrap V3](https://getbootstrap.com/docs/3.3/)
 ```
  npm install bootstrap-css-only@3 --save
  npm install bootstrap.native --save
 ```
 
+## Installation de Jquery
+1. Installation du Package ```npm install jquery```
+2. Configuration pour webpack : 
+    Ajouter les lignes ci-dessous dans le fichier WEBPACK.DEV.CONF.JS AND WEBPACK.PROD.CONF.JS
+    ```
+    ...
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
+    ...
+    ```
+    Et dans le fichier .ESLINTRC.JS
+    ...
+    ...
+    globals: {
+        $: false
+    },
+    ...
+    ...
 
+### Ajout de librairies Jquery
+#### jquery-smooth-scroll
+jquery-smooth-scroll permet un défilement fluide pour les liens de même page.
+1. Installation : ```npm install jquery-smooth-scroll```
+2. Exemple d'utilisation : Sur cet exemple, l'effet de scroll est ajouté sur tous les liens (balise <a>).
+```javascript
+$(document).ready(() => {
+    $('a').smoothScroll();
+});
+``` 
+#### Chart.js
+Permet la création simple de différentes sortes de graphiques.
+1. Installation  ```npm install chart.js --save```
+2. Utilisation : Importer dans le fichier main.js  ```import Chart from 'chart.js';```
 
-
+Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officiel](http://www.chartjs.org/). 
 
 ### Démarrage du serveur de développement
 ``` bash
 npm run dev
 ```
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 
 # build for production and view the bundle analyzer report
 ``` bash
