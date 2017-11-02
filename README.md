@@ -18,11 +18,11 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 - npm
 - Webpack
 
-- [Bootstrap]()
-- [jquery-smooth-scroll]()
-- [Chart.js]()
+- [Bootstrap](#installation-de--bootstrap-v3)
+- [jquery-smooth-scroll](#jquery-smooth-scroll)
+- [Chart.js](#chartjs)
 
-- [Visual Studio Code]()
+- [Visual Studio Code](#installation-des-outils)
 - Git et GitHub
 
 ## Processus détaillé
