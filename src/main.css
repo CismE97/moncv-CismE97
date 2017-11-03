@@ -24,6 +24,22 @@ a:hover{color: var(--secondary-color);}
     color:#FFF;
     background-color: var(--primary-bg-color);
 }
+dd{
+    margin-left: 40px;
+    margin-bottom: 40px;
+    
+}
+dt::before{
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color:var(--secondary-color);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
 
 #infos, #skills, #contact{
     background-color: var(--secondary-bg-color);
