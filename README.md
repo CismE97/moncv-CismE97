@@ -1,4 +1,4 @@
-# moncv
+# moncv-moncv-CismE97 (Cv de Christe Thibaud)
 CV / Portfolio réalisé durant le module "PROJET DE TECHNOLOGIES WEB" de 2ème année de Bachelor en Informatique de Gestion à la He-Arc de Neuchâtel.
 Le site que j'ai réalisé est visible [ici](https://heg-web.github.io/moncv-CismE97/).
 
@@ -29,7 +29,16 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 ### Installation des outils
 1. Installer [Visual Studio Code](https://code.visualstudio.com/Download)
 2. Installer [Git](https://git-scm.com/downloads)
-3. Configuration de eslint : Ajouter le code ci-dessous dans le fichier .eslintrc.js
+`
+
+### Installation de node.js
+1. Téléchargement et installation de Node.js / Vue.js pour avoir npm. (Installation globale pour tous les projets). ``` npm install -g vue-cli ```
+2. Création d'un nouveau projet (utilise le template webpack) ``` vue init webpack nomDuProjet ```
+3. ??  ``` code . ```
+4. Installation des dépendances . ``` npm install ```
+5. Cleanup ``` npm uninstall vue --save ```
+6. Configuration de eslint : Ajouter le code ci-dessous dans le fichier .eslintrc.js de votre projet
+
 ```
 {
   ...,
@@ -47,28 +56,22 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
   },
   ...
 }
-```
-
-### Installation de node.js
-1. Téléchargement et installation de Node.js / Vue.js pour avoir npm. (Installation globale pour tous les projets). ``` npm install -g vue-cli ```
-2. Création d'un nouveau projet (utilise le template webpack) ``` vue init webpack nomDuProjet ```
-3. ??  ``` code . ```
-4. Installation des dépendances . ``` npm install ```
-4. Cleanup ``` npm uninstall vue --save ```
+``` 
 
 #### Démarrage du serveur de développement
 ``` bash
 npm run dev
 ```
+
 #### Déploiement avec GitHub
-1. Prérequis : Créer un compte GitHub et avoir son projet configurer avec git. 
+1. Prérequis : Créer un compte GitHub et avoir son projet configuré avec git. (Voir [aide Git](#aide-de-git))
 2. Génération des fichiers minifiés ```npm run build ```
 3. Création de la branche gh-pages  (??)
-La branche master sera déployée sur la branche gh-pages cette page sera hébergée par GitHub.
+La branche master sera déployée sur la branche gh-pages. Cette page sera hébergée par GitHub.
 [GitHub Pages](https://pages.github.com/)
 
 4. Configuarion du deploiement
-- Installation d'un plugin pour 'commit' et 'push' automatiquement.
+Installation d'un plugin pour 'commit' et 'push' automatiquement.
  ```npm install push-dir --save-dev```
 
 Puis on ajoute les lignes ci-dessous dans le fichier package.json
@@ -98,10 +101,10 @@ git commit -m
  npm install bootstrap.native --save
 ```
 
-## Installation de Jquery
+### Installation de Jquery
 1. Installation du Package ```npm install jquery```
 2. Configuration pour webpack : 
-    Ajouter les lignes ci-dessous dans le fichier WEBPACK.DEV.CONF.JS AND WEBPACK.PROD.CONF.JS
+    Ajouter les lignes ci-dessous dans le fichier WEBPACK.DEV.CONF.JS et WEBPACK.PROD.CONF.JS
     ```
     ...
     plugins: [
@@ -112,16 +115,16 @@ git commit -m
     ...
     ```
     Et dans le fichier .ESLINTRC.JS
-    ...
+    ```
     ...
     globals: {
         $: false
     },
     ...
-    ...
+    ```
 
 ### Ajout de librairies Jquery
-#### jquery-smooth-scroll
+#### [jquery-smooth-scroll](https://www.npmjs.com/package/jquery-smooth-scroll)
 jquery-smooth-scroll permet un défilement fluide pour les liens de même page.
 1. Installation : ```npm install jquery-smooth-scroll```
 2. Exemple d'utilisation : Sur cet exemple, l'effet de scroll est ajouté sur tous les liens (balise <a>).
@@ -130,16 +133,16 @@ $(document).ready(() => {
     $('a').smoothScroll();
 });
 ``` 
-#### Chart.js
+#### [Chart.js](https://www.npmjs.com/package/chart.js)
 Permet la création simple de différentes sortes de graphiques.
 1. Installation  ```npm install chart.js --save```
 2. Utilisation : Importer dans le fichier main.js  ```import Chart from 'chart.js';```
 
-Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officiel](http://www.chartjs.org/). 
+Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officielle](http://www.chartjs.org/). 
 
 
 
-### Aide de Git
+### Aide de [Git](https://git-scm.com/)
 #### Nouveau projet
 - Initialisation de git dans le répertoire actuel : ```git init```
 
@@ -157,4 +160,3 @@ Un exemple de transformation de progress bar est visible dans le fichier [main.j
 Ajouter  ```* text eol=lf``` suivante dans le fichier : .gitattributes
 
 - Le fichier .gitignore permet d'indiquer à git d'ignorer certains fichiers.
-
