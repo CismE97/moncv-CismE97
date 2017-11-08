@@ -34,10 +34,9 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 ### Installation de node.js
 1. Téléchargement et installation de Node.js / Vue.js pour avoir npm. (Installation globale pour tous les projets). ``` npm install -g vue-cli ```
 2. Création d'un nouveau projet (utilise le template webpack) ``` vue init webpack nomDuProjet ```
-3. ??  ``` code . ```
-4. Installation des dépendances . ``` npm install ```
-5. Cleanup ``` npm uninstall vue --save ```
-6. Configuration de eslint : Ajouter le code ci-dessous dans le fichier .eslintrc.js de votre projet
+3. Installation des dépendances . ``` npm install ```
+4. Cleanup ``` npm uninstall vue --save ```
+5. Configuration de eslint : Ajouter le code ci-dessous dans le fichier .eslintrc.js de votre projet
 
 ```
 {
