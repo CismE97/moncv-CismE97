@@ -35,7 +35,7 @@ $(document).ready(() => {
         });
     });
 
-     // eslint-disable-next-line
+    // eslint-disable-next-line
     let element = new ScrollReveal();
     element.reveal('h2');
     element.reveal('.skill');

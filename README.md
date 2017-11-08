@@ -138,8 +138,20 @@ Permet la création simple de différentes sortes de graphiques.
 1. Installation  ```npm install chart.js --save```
 2. Utilisation : Importer dans le fichier main.js  ```import Chart from 'chart.js';```
 
-Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officielle](http://www.chartjs.org/). 
+Un exemple de transformation de progress bar est visible dans le fichier [main.js](https://github.com/heg-web/moncv-CismE97/blob/master/src/main.js) ou dans la [documentation officielle](http://www.chartjs.org/).
 
+#### [scrollreveal](https://scrollrevealjs.org/)
+Permet de faire apparaître les éléments du DOM au fur et que l'utilisateur scroll. 
+1. Installation de la librairie : ```npm install scrollreveal```
+2. Utilisation : Importer dans le fichier main.js : ```import Chart from 'chart.js';```
+3. Exemple d'utilisation : _Ajoute l'effet sur tous les titre h2_
+
+```javascript
+$(document).ready(() => {
+    let element = new ScrollReveal();
+    element.reveal('h2');
+});
+```
 
 
 ### Aide de [Git](https://git-scm.com/)
