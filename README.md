@@ -12,6 +12,7 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 6. Ajout de Jquery
 7. Ajout de jquery-smooth-scroll
 8. Ajout de Chart.js
+9. Ajout de scrollreveal
 
 ## Outils / Technologies utilisés
 - [Node.js](#installation-de-nodejs)
@@ -21,6 +22,7 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 - [Bootstrap](#installation-de--bootstrap-v3)
 - [jquery-smooth-scroll](#jquery-smooth-scroll)
 - [Chart.js](#chartjs)
+- [scrollreveal](https://github.com/heg-web/moncv-CismE97#scrollreveal)
 
 - [Visual Studio Code](#installation-des-outils)
 - Git et GitHub
@@ -35,7 +37,7 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 1. Téléchargement et installation de Node.js / Vue.js pour avoir npm. (Installation globale pour tous les projets). ``` npm install -g vue-cli ```
 2. Création d'un nouveau projet (utilise le template webpack) ``` vue init webpack nomDuProjet ```
 3. Installation des dépendances . ``` npm install ```
-4. Cleanup ``` npm uninstall vue --save ```
+4. Cleanup ``` npm uninstall vue --save ``` (On supprime vue.js car on en a pas besoin pour ce projet)
 5. Configuration de eslint : Ajouter le code ci-dessous dans le fichier .eslintrc.js de votre projet
 
 ```
@@ -65,7 +67,7 @@ npm run dev
 #### Déploiement avec GitHub
 1. Prérequis : Créer un compte GitHub et avoir son projet configuré avec git. (Voir [aide Git](#aide-de-git))
 2. Génération des fichiers minifiés ```npm run build ```
-3. Création de la branche gh-pages  (??)
+3. Créer la branche gh-pages
 La branche master sera déployée sur la branche gh-pages. Cette page sera hébergée par GitHub.
 [GitHub Pages](https://pages.github.com/)
 
@@ -126,7 +128,7 @@ git commit -m
 #### [jquery-smooth-scroll](https://www.npmjs.com/package/jquery-smooth-scroll)
 jquery-smooth-scroll permet un défilement fluide pour les liens de même page.
 1. Installation : ```npm install jquery-smooth-scroll```
-2. Exemple d'utilisation : Sur cet exemple, l'effet de scroll est ajouté sur tous les liens (balise <a>).
+2. Exemple d'utilisation : Sur cet exemple, l'effet de scroll est ajouté sur tous les liens (balise ```<a>```).
 ```javascript
 $(document).ready(() => {
     $('a').smoothScroll();
