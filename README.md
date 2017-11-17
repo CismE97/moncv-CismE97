@@ -152,7 +152,6 @@ $(document).ready(() => {
 });
 ```
 
-
 ### Aide de [Git](https://git-scm.com/)
 #### Nouveau projet
 - Initialisation de git dans le répertoire actuel : ```git init```
@@ -170,4 +169,6 @@ $(document).ready(() => {
 - Spécifier à Git d’utiliser le Line Feed (caractère de contrôle indiquant le passage à la ligne de texte suivante) comme caractère de fin de ligne.
 Ajouter  ```* text eol=lf``` suivante dans le fichier : .gitattributes
 
-- Le fichier .gitignore permet d'indiquer à git d'ignorer certains fichiers.
+- Le fichier .gitignore permet d'indiquer à git d'ignorer certains fichiers. 
+- Le fichier .gitattribute a été configuré comme [cela](https://github.com/heg-web/moncv-CismE97/blob/master/.gitattributes)
+
