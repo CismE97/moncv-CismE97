@@ -66,7 +66,11 @@ dt::before{
 .header-baseline{
     margin : 100px auto;
 }
-.header-baseline h1{ margin-bottom: 30px;}
+.header-baseline h1{ 
+    margin-bottom: 30px;
+    color:#2E2E34;
+    font-weight: 600;
+}
 .header-baseline img{
     margin: auto;
     max-width: 150px;
