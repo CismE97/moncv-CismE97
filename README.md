@@ -1,4 +1,4 @@
-# moncv-moncv-CismE97 (Cv de Christe Thibaud)
+# moncv-CismE97 (Cv de Christe Thibaud)
 CV / Portfolio réalisé durant le module "PROJET DE TECHNOLOGIES WEB" de 2ème année de Bachelor en Informatique de Gestion à la He-Arc de Neuchâtel.
 Le site que j'ai réalisé est visible [ici](https://heg-web.github.io/moncv-CismE97/).
 
