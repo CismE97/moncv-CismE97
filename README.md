@@ -170,5 +170,5 @@ $(document).ready(() => {
 Ajouter  ```* text eol=lf``` suivante dans le fichier : .gitattributes
 
 - Le fichier .gitignore permet d'indiquer à git d'ignorer certains fichiers
-- Le fichier .gitattribute a été configuré comme [ainsi](https://github.com/heg-web/moncv-CismE97/blob/master/.gitattributes)
+- Le fichier .gitattribute a été configuré [ainsi](https://github.com/heg-web/moncv-CismE97/blob/master/.gitattributes)
 
