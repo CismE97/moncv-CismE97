@@ -34,6 +34,8 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
 `
 
 ### Installation de node.js
+NodeJS est une plateforme basée sur le moteur JavaScript V8 de Chrome et permet aux développerur de réaliser des applications/sites en utilisant du JavaScript.
+
 1. Téléchargement et installation de Node.js / Vue.js pour avoir npm. (Installation globale pour tous les projets). ``` npm install -g vue-cli ```
 2. Création d'un nouveau projet (utilise le template webpack) ``` vue init webpack nomDuProjet ```
 3. Installation des dépendances . ``` npm install ```
@@ -58,6 +60,7 @@ Afin de réaliser ce CV, j'ai suivi les étapes suivantes :
   ...
 }
 ``` 
+6. Correction de la configuration de webpack. Il faut donc remplacer la ligne suivante dans le fichier build/webpack.dev.conf : ```devtool: 'source-map'```
 
 #### Démarrage du serveur de développement
 ``` bash
@@ -95,12 +98,16 @@ git commit -m
 
 
 ### Installation de  [Bootstrap V3](https://getbootstrap.com/docs/3.3/)
+Bootstrap est un regrupement d'outils permettant de réaliser des designs facilement.
+
 ```
  npm install bootstrap-css-only@3 --save
  npm install bootstrap.native --save
 ```
 
 ### Installation de Jquery
+Jquery est une bibliothèque Javascript facilitant l'écriture de code Javascript.
+
 1. Installation du Package ```npm install jquery```
 2. Configuration pour webpack : 
     Ajouter les lignes ci-dessous dans le fichier WEBPACK.DEV.CONF.JS et WEBPACK.PROD.CONF.JS
@@ -153,6 +160,7 @@ $(document).ready(() => {
 ```
 
 ### Aide de [Git](https://git-scm.com/)
+Git est un système de gestion des versions décentralisé.
 #### Nouveau projet
 - Initialisation de git dans le répertoire actuel : ```git init```
 
