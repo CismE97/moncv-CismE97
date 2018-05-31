@@ -64,7 +64,7 @@ dt::before{
     color: #FFF;
 }
 .header-baseline{
-    margin : 100px auto;
+    padding : 100px;
 }
 .header-baseline h1{ 
     margin-bottom: 30px;

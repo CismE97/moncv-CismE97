@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Christe Thibaud CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <script src="https://use.fontawesome.com/87a5e9c902.js"></script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
 </head>
 <body>
     <header id="home">
@@ -61,10 +64,9 @@
                 <div class="col-md-3 text-left">
                     <p><i class="fa fa-birthday-cake fa-2x" aria-hidden="true"></i>&nbsp; 05.01.1997</p>
                 </div>
-                <div class="col-md-3 text-left">
+                <div class="col-md-9 text-left">
                     <p><i class="fa fa-flag fa-2x" aria-hidden="true"></i>&nbsp; Suisse</p>
                 </div>
-                <div class="col-md-6 text-right"><a class="btn btn-primary" href="./static/doc/CV-Christe-Thibaud.pdf">Télécharger mon CV</a></div>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -300,23 +302,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
+                    <div id="validationMessage" class="alert alert-success" role="alert" style="display:none;">
+                        <p>Merci pour votre message, une réponse vous sera envoyé le plus rapidement possible. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Me contacter</h2>
                     <form>
                         <div class="input-group input-group-lg">
-                            <input type="text" class="form-control" name="name" placeholder="Votre nom">
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Votre nom">
                         </div>
                         <div class="input-group input-group-lg">
-                            <input type="text" class="form-control" placeholder="Votre email">
+                            <input id="email" type="text" class="form-control" placeholder="Votre email">
                         </div>
 
                         <div class="input-group input-group-lg">
-                            <input type="text" class="form-control" name="subject" placeholder="Objet">
+                            <input id="subject" type="text" class="form-control" name="subject" placeholder="Objet">
                         </div>
                         <div class="input-group input-group-lg">
-                            <textarea class="form-control" name="comment" placeholder="Votre message"></textarea>
+                            <textarea id="message" class="form-control" name="comment" placeholder="Votre message"></textarea>
                         </div>
                         <div class="input-group input-group-lg">
-                            <input class="btn btn-primary" type="submit" value="Envoyer">
+                            <input id="send" class="btn btn-primary" value="Envoyer">
                         </div>
                     </form>
                 </div>
@@ -332,7 +341,7 @@
                         <li>Christe Thibaud</li>
                         <li>Rue du Printemps 23</li>
                         <li>2350 Saignelégier</li>
-                        <li><a href="mailto:thibaudchriste1997@gmail.com">thibaudchriste1997@gmail.com</a></li>
+                        <li><a href="mailto:contact@thibaudchriste.ch">contact@thibaudchriste.ch</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 social-network">
@@ -347,5 +356,4 @@
         </div>
     </footer>
 </body>
-
 </html>

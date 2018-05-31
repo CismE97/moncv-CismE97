@@ -40,4 +40,19 @@ $(document).ready(() => {
     element.reveal('h2');
     element.reveal('.skill');
     element.reveal('.media');
+
+    $('#send').click(function () {
+        let from = $('#email').val();
+        let to = 'contact@thibaudchriste.ch';
+        let subject = $('#subject').val();
+        let body = 'Ce message a été envoyé depuis : www.thibauchriste.ch : <br><br> ' + $('#message').val() + '<br><br>' + $('#name').val();
+
+        // eslint-disable-next-line
+        Email.send(from,to,subject,body,
+        'mail.infomaniak.com',
+        'contact@thibaudchriste.ch',
+        'MDP');
+
+        $('#validationMessage').show();
+    });
 });
