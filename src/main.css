@@ -119,6 +119,12 @@ dt::before{
     border: none;
     font-size: 14px;
 }
+#contact .message-editor, #contact .ql-toolbar{
+    background-color: #FFF;
+}
+#contact .message-editor{
+    min-height: 200px;
+}
 
 /* -- Footer --*/
 .footer .adresse ul{

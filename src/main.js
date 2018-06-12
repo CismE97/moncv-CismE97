@@ -1,10 +1,25 @@
 import 'bootstrap.native';
 import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'quill/dist/quill.snow.css';
 import './main.css';
 
 import 'jquery-smooth-scroll';
+import Quill from 'quill';
 import ScrollReveal from 'scrollreveal';
 import Chart from 'chart.js';
+
+// eslint-disable-next-line
+var quill = new Quill('#editor', {
+    modules: {
+        toolbar: [
+          ['bold', 'italic'],
+          ['link', 'blockquote', 'code-block', 'image'],
+          [{ list: 'ordered' }, { list: 'bullet' }]
+        ]
+    },
+    placeholder: 'Votre message ici ...',
+    theme: 'snow'
+});
 
 $(document).ready(() => {
     $('a').smoothScroll();
