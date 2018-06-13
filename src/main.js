@@ -57,17 +57,30 @@ $(document).ready(() => {
     element.reveal('.media');
 
     $('#send').click(function () {
-        let from = $('#email').val();
-        let to = 'contact@thibaudchriste.ch';
+        let replyTo = $('#email').val();
+        let name = $('#name').val();
         let subject = $('#subject').val();
-        let body = 'Ce message a été envoyé depuis : www.thibauchriste.ch : <br><br> ' + $('#message').val() + '<br><br>' + $('#name').val();
+        let message = $('.ql-editor').html();
 
-        // eslint-disable-next-line
-        Email.send(from,to,subject,body,
-        'mail.infomaniak.com',
-        'contact@thibaudchriste.ch',
-        'MDP');
-
-        $('#validationMessage').show();
+        var data = {
+            service_id: 'gmail',
+            template_id: 'template_EgsnVMYB',
+            user_id: 'user_akHSigRBBFO4vbVaqkwjE',
+            template_params: {
+                'reply_to': replyTo,
+                'name': name,
+                'object': subject,
+                'message_html': message
+            }
+        };
+        $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+        }).done(function () {
+            $('#validationMessage').show();
+        }).fail(function (error) {
+            alert('Oops... ' + JSON.stringify(error));
+        });
     });
 });
